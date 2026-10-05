@@ -1,0 +1,16 @@
+-- Starter measures
+Revenue = SUM(FactFinancials[Sales])
+
+COGS = SUM(FactFinancials[COGS])
+
+Gross Profit = [Revenue] - [COGS]
+
+Gross Margin % = DIVIDE([Gross Profit], [Revenue])
+
+Budget Revenue = SUM(FactBudget[Budget Revenue])
+
+Revenue Variance = [Revenue] - [Budget Revenue]
+
+Revenue Variance % = DIVIDE([Revenue Variance], [Budget Revenue])
+
+Budget Achievement % = DIVIDE([Revenue], [Budget Revenue])
